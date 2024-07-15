@@ -1,0 +1,326 @@
+body{
+    font-family: 'Arial';
+    background-image: url(img/body.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    margin: 0;
+}
+.login-form{
+    border: 2px solid black;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+.login-form input[type=text]{
+    width: 150px;
+    height: 20px;
+    font-size: 1em;
+}
+.login-form input[type=submit]{
+    border: none;
+    border-radius: 5px;
+    background-color: #cccccc;
+    padding: 10px 5px;
+    font-size: 1em;
+}
+.login-form input[type=submit]:hover{
+    background-color: #999999;
+}
+.home-page{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+header{
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0 0 10px;
+}
+header img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.header-content{
+    position: relative;
+    height: 100px;
+}
+.header-content-user{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+}
+.header-content-user h4{
+    color: yellow;
+    margin: 0;
+    text-shadow: 0 0 10px lightgray;
+}
+
+.header-content button{
+    border: none;
+    border-radius: 5px;
+    background-color: #cccccc;
+    padding: 10px 5px;
+}
+.header-content button:hover{
+    background-color: #999999;
+}
+table, th, td{
+    font-size: 1.05em;
+    border: 4px solid black;
+    border-collapse: collapse;
+}
+.myContainer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.filter{
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+.filter form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.filter input[type=text]{
+    width: 150px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+.filter select{
+    height: 25px;
+    margin-bottom: 5px;
+}
+.filter input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+}
+.filter input[type=submit]{
+    border: none;
+    border-radius: 5px;
+    background-color: #cccccc;
+    padding: 8px 5px;
+}
+.filter input[type=submit]:hover{
+    background-color: #999999;
+}
+.data{
+    text-align: center;
+}
+.data .updateButton{
+    border: none;
+    border-radius: 5px;
+    background-color: lime;
+    padding: 4px 6px;
+}
+.data .updateButton:hover{
+    background-color: greenyellow;
+}
+.data .deleteButton{
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    padding: 5px 10px;
+}
+.data .deleteButton:hover{
+    background-color: orangered;
+}
+.studentData th:nth-child(2){
+    width: 200px;
+}
+.studentData th:nth-child(3){
+    width: 70px;
+}
+.add{
+    margin-left: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    padding: 8px 5px;
+}
+.add:hover{
+    background-color: darkgreen;
+}
+.addSubmit{
+    display: flex;
+    justify-content: space-between;
+}
+.addSubmit button{
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    padding: 8px 5px;
+}
+.addSubmit button:hover{
+    background-color: darkgreen;
+}
+.addSubmit input[type=reset]{
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    padding: 8px 5px;
+}
+.addSubmit input[type=reset]:hover{
+    background-color: darkorange;
+}
+.addSubmit input[type=button]{
+    border: none;
+    border-radius: 5px;
+    background-color: palevioletred;
+    color: white;
+    padding: 8px 5px;
+}
+.addSubmit input[type=button]:hover{
+    background-color: #b55c79;
+}
+.update{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.update div{
+    margin: 10px 0;
+}
+.update input[type=text],input[type=date]{
+    width: 100%;
+    height: 25px;
+    font-size: 1.05em;
+}
+.update select{
+    width: 60px;
+    height: 23px;
+}
+.viewMark{
+    font-size: 1.05em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.viewMark form{
+    margin-bottom: 10px;
+}
+.viewMark select{
+    width: 60px;
+    height: 30px;
+    margin-right: 20px;
+}
+.viewMark input[type=submit]{
+    border: none;
+    border-radius: 5px;
+    background-color: #cccccc;
+    padding: 7px 10px;
+}
+.viewMark input[type=submit]:hover{
+    background-color: #999999;
+}
+.viewMark button{
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    padding: 7px 10px;
+}
+.viewMark button:hover{
+    background-color: darkorange;
+}
+.inputArea input{
+    width: 60px;
+    height: 30px;
+    font-size: 1.05em;
+}
+.register-semester{
+    font-size: 1.05em;
+    margin-bottom: 5px;
+}
+.register-semester select{
+    width: 60px;
+    height: 30px;
+}
+.register-add{
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    padding: 7px 12px;
+    margin: 0 15px;
+}
+.register-add:hover{
+    background-color: darkgreen;
+}
+.register-remove{
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    padding: 7px 12px;
+    margin: 0 15px;
+}
+.register-remove:hover{
+    background-color: orangered;
+}
+.register-table{
+    text-align: center;
+}
+.register-viewcart{
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    padding: 7px 12px;
+    margin-top: 10px;
+}
+.register-viewcart:hover{
+    background-color: darkorange;
+}
+.cart-register{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.cart-register input[type=submit]{
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    padding: 8px 5px;
+}
+.cart-register input[type=submit]:hover{
+    background-color: darkgreen;
+}
+.cart-register input[type=button]{
+    border: none;
+    border-radius: 5px;
+    background-color: palevioletred;
+    color: white;
+    padding: 8px 5px;
+}
+.cart-register input[type=button]:hover{
+    background-color: #b55c79;
+}
